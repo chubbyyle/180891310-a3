@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FakeChimp's Registration Form</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/app.js" async> </script>
+  </head>
+
+  <body>
+    <div class="monkey-container">
+      <div class="row">
+        <div class="col-lg-2 image-container-color" align="center">
+          <img src="img/color_chimp.png" alt="color-chimp" style="width:120px" align="left">
+        </div>
+
+        <div class="col-lg-2 image-container-gray" align="center">
+          <img src="img/gray_chimp.png" alt="gray_chimp" style="width:120px" align="center">
+        </div>
+
+        </div>
+
+      </div>
+
+<div class"col-lg col-xs">
+<div class="header">
+<h1>Get Started with your account</h1>
+<p>Find your people. Engage your customers. Build your brand. Do it all with FakeChimp's Marketing Platform. </p>
+
+</div>
+</div>
+<form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register" method="POST">
+  <input type="hidden" name="student_id" id="student_id" value="180891310">
+
+  <br>
+  <strong> Email </strong> <br>
+  <input type="text" name="email" id="email">
+  <br>
+  <strong> Username </strong> <br>
+  <input type="text" name="username" id="username">
+  <br>
+  <strong> Password </strong> <a href="#" style="color: blue" onclick="myFunction()"><i class="fa fa-eye" aria-hidden="true"></i> Show</a> <br>
+  <input type="password" name"password" id="password">
+  <div>
+  <br>
+     <input type="submit" name="submit" id="submit" value="Get Started!"> By clicking the "Get Started!" button, you are creating a FakeChimp Account.
+  <br>
+  <br>
+</div>
+</form>
+<div class="footer">
+  <p> ©2019 All Rights Reserved. FakeChimp ® is a registered trademark of WLUCP202 Class.</p>
+</div>
+
+  </body>
+
+
+</html>

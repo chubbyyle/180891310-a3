@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Animal Donuts Website">
+    <meta name="author" content="Chelsea Le">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="icon" href="http://v4-alpha.getbootstrap.com/favicon.ico">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="http://wlu-cp202.appspot.com/CP202/Fall2019/shopping_cart_v1/cart.js" async></script>
+
+    <!-- YOU MUST MODIFY THIS VALUE TO POINT TO YOUR ACTUAL CHECKOUT PAGE -->
+    <script>localStorage.checkoutURL = "../checkout.html";</script>
+
+    <title>PandaDonutPage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="http://v4-alpha.getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+        <h1 style="font-size: 20px;background-color:lightpink;"> 172 Lester Street, Waterloo Ontario </h1>
+
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Home
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="../index.html">Homepage</a>
+          </div>
+        </div>
+
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop2" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Products
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="index.html">Homepage</a>
+            <a class="dropdown-item" href="koaladonut.html">Koala Donut</a>
+            <a class="dropdown-item" href="pandadonut.html">Panda Donut</a>
+          </div>
+        </div>
+
+    <h1 style="font-size: 50px; text-align:center;"> Welcome To Animal Donuts </h1>
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h3 class="featurette-heading"> Panda Donuts-<span class="text-muted"> They will warm your heart</span></h3>
+          <p class="lead"> How should you treat yourself? Well...you should buy our limited edition Panada Donuts! Trust us, you will be Bear-y Happy. Fun Fact: The panda is a symbol of positive thoughts and good luck. </p>
+          <h4> One Donut: $2.00 </h4>
+                    <a href="#" onclick="clientAddItemToCart({prodName: 'PandaDonut', prodDesc: 'Limited Edition Donut', prodPrice: '2.00', prodQty: '1'});" class="btn btn-info" role="button">Add to cart</a>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-fluid center-block" data-src="../img/pandadonut.jpg" alt="500x500" src="../img/pandadonut.jpg" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2019 Animal Donuts Company </p>
+      </footer>
+
+  <!-- /.container -->
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="http://v4-alpha.getbootstrap.com/assets/js/vendor/jquery.min.js"></script>')
+  <script src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <script src="http://v4-alpha.getbootstrap.com/assets/js/vendor/holder.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+      width="500"
+      height="500"
+      viewBox="0 0 500 500"
+      preserveAspectRatio="none"
+      style="
+        display: none;
+        visibility: hidden;
+        position: absolute;
+        top: -100%;
+        left: -100%;
+      "
+    >
+      <defs>
+        <style type="text/css"></style>
+      </defs>
+      <text
+        x="0"
+        y="25"
+        style="
+          font-weight:bold;
+          font-size:25pt;
+          font-family:Arial, Helvetica, Open Sans, sans-serif
+        "
+      >
+        500x500
+      </text>
+    </svg>
+  </body>
+</html>

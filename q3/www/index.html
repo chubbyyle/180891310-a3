@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FakeChimp's Registration Form</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="icon" href="http://v4-alpha.getbootstrap.com/favicon.ico">
+  </head>
+  <body>
+
+    <div class="image-container">
+    <div class="mobile-image">
+    <img src="img/black-white.png" alt="blackandwhite" style="width:120px;">
+    </div>
+    <div class="desktop-image">
+    <img src="img/colour.png" alt="colour" style="width:120px;">
+    </div>
+    </div>
+
+<h1>Get Started with your account</h1>
+<p>Find your people. Engage your customers. Build your brand. Do it all with FakeChimp's Marketing Platform. </p>
+
+<form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register_with_image" method="POST" enctype="multipart/form-data">
+  <input type="hidden" name="student_id" id="student_id" value="180891310">
+
+  <br>
+  <strong> Email </strong> <br>
+  <input type="text" name="email" id="email" cols="30">
+  <br>
+  <strong> Country </strong> <br>
+  <div class="custom-select" style="width:300px;">
+  <select>
+    <option value="0">Canada</option>
+    <option value="1">United States</option>
+  </select>
+
+</div>
+  <strong> Description </strong> <br>
+  <form action="/action_page.php">
+  <textarea name="message" rows="4" cols="30">The cat was playing in the garden.</textarea>
+  <br>
+  <strong> Image Upload </strong> <br>
+  <input type="file" name="avatarImage" id="avatarImage">
+  <div>
+  <br>
+     <input class="btn btn-block" type="submit" value="Get Started!" onclick="validateFile()" value="Get Started!" align="center">
+  By clicking the "Get Started!" button, you are creating a FakeChimp Account.
+  <br>
+</div>
+</form>
+
+
+<div class="footer">
+  <p> ©2019 All Rights Reserved. FakeChimp ® is a registered trademark of WLUCP202 Class.</p>
+</div>
+
+  </body>
+
+
+</html>

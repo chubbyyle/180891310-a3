@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
+
+
+/* This changes everything inside the body tag. */
+body {
+    font-family: Quicksand, Monaco, monospace;
+    font-size: 22px;
+    font-weight: normal;
+    color: black;
+}
+
+
+h2 {
+  color: white;
+  text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align:center;
+}
+
+h4 { font-size:larger; margin:0
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+
+}
+
+img{
+  opacity: 0.8;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.footer {
+    position: fixed;
+    height: 100px;
+    bottom: 100px;
+    width: 100%;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
